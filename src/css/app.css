@@ -1,0 +1,413 @@
+/* Your main CSS file (e.g., globals.css or app.css) */
+@import "tailwindcss";
+@import './_input.css';
+@import './_alert.css';
+@import './_toast.css';
+@import './performance-fixes.css';
+@import './_bairesdev-header.css';
+@import './_marquee.css';
+/* Custom variant for dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+/* Define your custom colors using CSS custom properties */
+@theme {
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --color-blue: #163c8c;
+    --text-primary: #112D4E;
+    --color-blue-50: #e5ecff;
+    --color-blue-100: #c7d5ff;
+    --color-blue-200: #9fb5ff;
+    --color-blue-300: #7795ff;
+    --color-blue-400: #4f75ff;
+    --color-blue-500: #163c8c;
+    --color-blue-600: #123070;
+    --color-blue-700: #0e2454;
+    --color-blue-800: #0a1838;
+    --color-blue-900: #060c1c;
+    --color-blue-950: #0a0a0a;
+    --color-bg-page: #F9FAFB;
+
+    --color-gray-light: #E4E4E4;
+    --color-gray-soft: #F5F5F5;
+    --color-gray-50: #f8f9fa;
+    --color-gray-100: #e9ecef;
+    --color-gray-200: #dee2e6;
+    --color-gray-300: #ced4da;
+    --color-gray-400: #adb5bd;
+    --color-gray-500: #5b697e;
+    --color-gray-600: #495057;
+    --color-gray-700: #343a40;
+    --color-gray-800: #212529;
+    --color-gray-900: #0f172b;
+    --color-gray-950: #0a0a0a;
+    --color-blue-light: #3b82f6;
+    --color-blue-accent: #1e40af;
+    --color-blue-dark: #1e3a8a;
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+
+    /* Border radius extensions */
+    --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
+    --radius-5xl: 2.5rem;
+    --radius-6xl: 3rem;
+    --filter-bg: hsl(240 9% 97%);
+
+
+    /* Design system colors */
+    --color-border: hsl(214.3 31.8% 91.4%);
+    --color-input: hsl(214.3 31.8% 91.4%);
+    --color-ring: hsl(222.2 84% 4.9%);
+    --color-background: hsl(0 0% 100%);
+    --color-foreground: hsl(222.2 84% 4.9%);
+    --color-primary: hsl(222.2 47.4% 11.2%);
+    --color-primary-foreground: hsl(210 40% 98%);
+    --color-primary-50: var(--color-blue-50);
+    --color-primary-100: var(--color-blue-100);
+    --color-primary-200: var(--color-blue-200);
+    --color-primary-300: var(--color-blue-300);
+    --color-primary-400: var(--color-blue-400);
+    --color-primary-500: var(--color-blue-500);
+    --color-primary-600: var(--color-blue-600);
+    --color-primary-700: var(--color-blue-700);
+    --color-primary-800: var(--color-blue-800);
+    --color-primary-900: var(--color-blue-900);
+    --color-primary-950: var(--color-blue-950);
+    --color-secondary: hsl(210 40% 96%);
+    --color-secondary-foreground: hsl(222.2 84% 4.9%);
+    --color-muted: hsl(210 40% 96%);
+    --color-muted-foreground: hsl(215.4 16.3% 46.9%);
+    --color-accent: hsl(210 40% 96%);
+    --color-accent-foreground: hsl(222.2 84% 4.9%);
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: hsl(222.2 84% 4.9%);
+
+    /* Error colors */
+    --color-error: hsl(0 84% 60%);
+    --color-error-foreground: hsl(0 0% 98%);
+    --color-error-subtle: hsl(0 93% 94%);
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    @theme {
+        --color-border: hsl(214.3 31.8% 91.4%);
+        --color-input: hsl(214.3 31.8% 91.4%);
+        --color-ring: hsl(222.2 84% 4.9%);
+        --color-background: hsl(0 0% 100%);
+        --color-foreground: hsl(222.2 84% 4.9%);
+        --color-primary: hsl(222.2 47.4% 11.2%);
+        --color-primary-foreground: hsl(210 40% 98%);
+        --color-primary-50: var(--color-blue-50);
+        --color-primary-100: var(--color-blue-100);
+        --color-primary-200: var(--color-blue-200);
+        --color-primary-300: var(--color-blue-300);
+        --color-primary-400: var(--color-blue-400);
+        --color-primary-500: var(--color-blue-500);
+        --color-primary-600: var(--color-blue-600);
+        --color-primary-700: var(--color-blue-700);
+        --color-primary-800: var(--color-blue-800);
+        --color-primary-900: var(--color-blue-900);
+        --color-primary-950: var(--color-blue-950);
+        --color-secondary: hsl(210 40% 96%);
+        --color-secondary-foreground: hsl(222.2 84% 4.9%);
+        --color-muted: hsl(210 40% 96%);
+        --color-muted-foreground: hsl(215.4 16.3% 46.9%);
+        --color-accent: hsl(210 40% 96%);
+        --color-accent-foreground: hsl(222.2 84% 4.9%);
+        --color-card: hsl(0 0% 100%);
+        --color-card-foreground: hsl(222.2 84% 4.9%);
+    }
+}
+
+/* Force dark mode when .dark class is present */
+.dark {
+    --color-border: hsl(214.3 31.8% 91.4%);
+    --color-input: hsl(214.3 31.8% 91.4%);
+    --color-ring: hsl(222.2 84% 4.9%);
+    --color-background: hsl(0 0% 100%);
+    --color-foreground: hsl(222.2 84% 4.9%);
+    --color-primary: hsl(222.2 47.4% 11.2%);
+    --color-primary-foreground: hsl(210 40% 98%);
+    --color-primary-50: var(--color-blue-50);
+    --color-primary-100: var(--color-blue-100);
+    --color-primary-200: var(--color-blue-200);
+    --color-primary-300: var(--color-blue-300);
+    --color-primary-400: var(--color-blue-400);
+    --color-primary-500: var(--color-blue-500);
+    --color-primary-600: var(--color-blue-600);
+    --color-primary-700: var(--color-blue-700);
+    --color-primary-800: var(--color-blue-800);
+    --color-primary-900: var(--color-blue-900);
+    --color-primary-950: var(--color-blue-950);
+    --color-secondary: hsl(210 40% 96%);
+    --color-secondary-foreground: hsl(222.2 84% 4.9%);
+    --color-muted: hsl(210 40% 96%);
+    --color-muted-foreground: hsl(215.4 16.3% 46.9%);
+    --color-accent: hsl(210 40% 96%);
+    --color-accent-foreground: hsl(222.2 84% 4.9%);
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: hsl(222.2 84% 4.9%);
+}
+
+
+/* Base styles */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: var(--text-primary);
+}
+
+body:is(.dark *) {
+    background-color: var(--color-gray-950);
+    color: var(--color-gray-400);
+}
+
+/* Primary color class */
+.text-primary-color {
+    color: var(--text-primary);
+}
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--text-primary);
+    }
+}
+
+/* Allow gradient text only in hero section */
+.hero-gradient-text {
+    color: transparent !important;
+}
+
+body {
+    color: var(--text-primary);
+}
+
+body {
+    overscroll-behavior: none;
+    overscroll-behavior-y: contain;
+    /* Optimize scrolling performance */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* Prevent unnecessary repaints */
+    will-change: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: #29d;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+    opacity: 1.0;
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+#nprogress .spinner {
+    display: block;
+    position: fixed;
+    z-index: 1031;
+    top: 15px;
+    right: 15px;
+}
+
+#nprogress .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 50%;
+    animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+    position: absolute;
+}
+
+
+
+.filter-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: hsl(var(--filter-bg));
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+@keyframes nprogress-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.clip-half {
+    clip-path: inset(0 50% 0 0);
+}
+
+@layer utilities {
+    @keyframes slide-in-from-right {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-out-to-right {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    .animate-slide-in-from-right {
+        animation: slide-in-from-right 0.3s ease-out forwards;
+    }
+
+    .animate-slide-out-to-right {
+        animation: slide-out-to-right 0.3s ease-in forwards;
+    }
+
+    .bg-primary-custom {
+        background-color: rgb(var(--color-primary-600));
+    }
+
+    .bg-primary-custom:hover {
+        background-color: rgb(var(--color-primary-700));
+    }
+
+    .clip-top-large-circle {
+        -webkit-clip-path: ellipse(50% 45% at 50% 50%);
+        clip-path: ellipse(50% 45% at 50% 50%);
+    }
+
+    .clip-bottom-large-circle {
+        -webkit-clip-path: ellipse(55% 50% at 50% 50%);
+        clip-path: ellipse(55% 50% at 50% 50%);
+    }
+
+    .clip-circle {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    .clip-next-section {
+        -webkit-clip-path: circle(75% at 50% 49%);
+        clip-path: circle(75% at 50% 49%);
+    }
+
+    @media screen and (min-width: 834px) {
+        .clip-next-section {
+            -webkit-clip-path: circle(85% at 50% 35%);
+            clip-path: circle(85% at 50% 35%);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .clip-next-section {
+            -webkit-clip-path: circle(95% at 50% 20%);
+            clip-path: circle(95% at 50% 20%);
+        }
+    }
+
+    @media screen and (min-width: 1512px) {
+        .clip-next-section {
+            -webkit-clip-path: circle(100% at 50% 5%);
+            clip-path: circle(100% at 50% 5%);
+        }
+    }
+
+    @media screen and (min-width: 1728px) {
+        .clip-next-section {
+            -webkit-clip-path: circle(93.75rem at 50% 0);
+            clip-path: circle(93.75rem at 50% 0);
+        }
+    }
+
+}
