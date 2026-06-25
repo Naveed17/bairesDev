@@ -19,7 +19,7 @@ const TestimonialsAndStats = () => {
     const testimonials = [
         {
             id: 1,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/rolls-royce-horizontal-black_ef0cq7.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/rolls-royce-horizontal-black_ef0cq7.svg?_a=BAVAfVDW0",
             quote: "Repeat Business is the best testament to a team's ability to perform, and I have no hesitation in hiring them again. BairesDev's pleasant collaboration style and high-level acumen rapidly catalyzed significant momentum towards achieving our objectives.",
             author: "Brad Mabry",
             role: "Product Manager at Rolls Royce",
@@ -27,7 +27,7 @@ const TestimonialsAndStats = () => {
         },
         {
             id: 2,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/iqvia_rp3op1.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/iqvia_rp3op1.svg?_a=BAVAfVDW0",
             quote: "BairesDev provides amazing development and design resourcing, along with best in class account management support. We were able to speed up product and design and delivery while reducing our costs. BairesDev has been hands down the best vendor decision my team has made.",
             author: "Adam Isley",
             role: "Director of Digital Strategy",
@@ -35,7 +35,7 @@ const TestimonialsAndStats = () => {
         },
         {
             id: 3,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/instructure_uooigd.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/instructure_uooigd.svg?_a=BAVAfVDW0",
             quote: "BairesDev is a trustworthy, knowledgeable, and adaptable development partner. They also know how to push back and ask questions when appropriate, which is a cornerstone of our corporate culture and really adds value.",
             author: "Matt Mecham",
             role: "Program Manager",
@@ -43,7 +43,7 @@ const TestimonialsAndStats = () => {
         },
         {
             id: 4,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/next-roll_iddcqa.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/next-roll_iddcqa.svg?_a=BAVAfVDW0",
             quote: "By seamlessly integrating with the internal team, BairesDev helped achieve key objectives by performing to the same expectations as full-time employees. Their strong onboarding methods, reliable deliverables, and responsiveness continue to strengthen the relationship.",
             author: "Patrick Mee",
             role: "VP of Engineering",
@@ -51,7 +51,7 @@ const TestimonialsAndStats = () => {
         },
         {
             id: 5,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/rga_krgqkr.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/rga_krgqkr.svg?_a=BAVAfVDW0",
             quote: "Having access to such a vast talent pool, BairesDev has allowed us to staff our teams with solid engineers and execute our projects faster than ever. Their staffing process is way better than any other outsourcing company in the region, so we can always rely on them.",
             author: "Ropu Rovagnati",
             role: "SVP, Managing Director, LATAM",
@@ -59,7 +59,7 @@ const TestimonialsAndStats = () => {
         },
         {
             id: 6,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/univision_cc1dsv.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/univision_cc1dsv.svg?_a=BAVAfVDW0",
             quote: "BairesDev being in a similar timezone has helped us tremendously in our productivity, especially in an agile structure. They have high-quality resources who are willing to go that extra mile to provide value in development.",
             author: "Viiveek Sankar",
             role: "VP of Engineering",
@@ -67,7 +67,7 @@ const TestimonialsAndStats = () => {
         },
         {
             id: 7,
-            logo: "https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/clientlogos/associated-press_ki8ugn.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/clientlogos/associated-press_ki8ugn.svg?_a=BAVAfVDW0",
             quote: "We have been successfully working with BairesDev for the last 7 years. They have excellent resources available in multiple areas, but mostly, I was impressed by the flexibility and cooperation of the management. They will always go the extra mile to make customers happy.",
             author: "Lana Shaova",
             role: "Sr. Director, Business Technology",
@@ -79,32 +79,32 @@ const TestimonialsAndStats = () => {
         {
             id: 1,
             name: "America's Fastest-Growing Companies 2025",
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/Financial_Times_l8p7s1.svg?_a=BAVAfVDW0"
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/Financial_Times_l8p7s1.svg?_a=BAVAfVDW0"
         },
         {
             id: 2,
             name: "Top 100 U.S. IT Innovators 2025",
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/CIO_100_hs8o7h.svg?_a=BAVAfVDW0"
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/CIO_100_hs8o7h.svg?_a=BAVAfVDW0"
         },
         {
             id: 3,
             name: "Nearshore North America Top Software Developers 2025",
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/Clutch_2025_jbvjkn.svg?_a=BAVAfVDW0"
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/Clutch_2025_jbvjkn.svg?_a=BAVAfVDW0"
         },
         {
             id: 4,
             name: "Top 100 Global Outsourcing Providers 2024",
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/IAOP_2024_vapevb.svg?_a=BAVAfVDW0"
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/IAOP_2024_vapevb.svg?_a=BAVAfVDW0"
         },
         {
             id: 5,
             name: "America's fastest-growing companies 2024",
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/INC_5000_2024_zrzy5t.svg?_a=BAVAfVDW0"
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/INC_5000_2024_zrzy5t.svg?_a=BAVAfVDW0"
         },
         {
             id: 6,
             name: "Company of the Year Artificial Intelligence 2024",
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/Globee_gfrgqe.svg?_a=BAVAfVDW0"
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_115/fl_sanitize/v1/www/static/awards/Globee_gfrgqe.svg?_a=BAVAfVDW0"
         }
     ];
 
@@ -153,7 +153,7 @@ const TestimonialsAndStats = () => {
                             fill
                             className="lg:object-[-45rem] xl:object-[-45rem] rounded-r-2xl object-cover md:object-right 3xl:object-right 2xl:rounded-2xl"
                             sizes="50vw"
-                            src="https://assets.bairesdev.com//image/upload/c_limit,w_1920/dpr_auto/f_auto/q_auto/v1/www/core/testimonials_ky4r6i?_a=BAVAfVDW0"
+                            src="https://assets.bairesdev.com/image/upload/c_limit,w_1920/dpr_auto/f_auto/q_auto/v1/www/core/testimonials_ky4r6i?_a=BAVAfVDW0"
                         />
                     </div>
 
@@ -590,7 +590,7 @@ const TestimonialsAndStats = () => {
                                 width={1632}
                                 height={1732}
                                 className="w-full"
-                                src="https://assets.bairesdev.com//image/upload/c_limit,w_1632/dpr_auto/f_auto/q_auto/v1/www/core/our_process_kfiyw2?_a=BAVAfVDW0"
+                                src="https://assets.bairesdev.com/image/upload/c_limit,w_1632/dpr_auto/f_auto/q_auto/v1/www/core/our_process_kfiyw2?_a=BAVAfVDW0"
                             />
                         </div>
                     </div>
@@ -604,7 +604,7 @@ const TestimonialsAndStats = () => {
                                     <Image
                                         alt=""
                                         fill
-                                        src="https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/phone_owvxn3.svg?_a=BAVAfVDW0"
+                                        src="https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/phone_owvxn3.svg?_a=BAVAfVDW0"
                                     />
                                 </div>
                                 <div className="ml-5 inline-block w-[calc(100%-68px)] align-top md:ml-6 lg:w-[520px] md:w-[440px]">
@@ -621,7 +621,7 @@ const TestimonialsAndStats = () => {
                                     <Image
                                         alt=""
                                         fill
-                                        src="https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/person_kkflzw.svg?_a=BAVAfVDW0"
+                                        src="https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/person_kkflzw.svg?_a=BAVAfVDW0"
                                     />
                                 </div>
                                 <div className="ml-5 inline-block w-[calc(100%-68px)] align-top md:ml-6 lg:w-[520px] md:w-[440px]">
@@ -638,7 +638,7 @@ const TestimonialsAndStats = () => {
                                     <Image
                                         alt=""
                                         fill
-                                        src="https://assets.bairesdev.com//image/upload/fl_sanitize/v1/www/static/track_em3zly.svg?_a=BAVAfVDW0"
+                                        src="https://assets.bairesdev.com/image/upload/fl_sanitize/v1/www/static/track_em3zly.svg?_a=BAVAfVDW0"
                                     />
                                 </div>
                                 <div className="ml-5 inline-block w-[calc(100%-68px)] align-top md:ml-6 lg:w-[520px] md:w-[440px]">

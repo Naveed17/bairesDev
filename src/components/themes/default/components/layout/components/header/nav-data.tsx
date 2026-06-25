@@ -38,7 +38,7 @@ export const NAV_ITEMS: NavMenuItem[] = [
         ],
         caseStudy: {
           imageSrc:
-            "https://assets.bairesdev.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/core/rolls_royce_default_6583f2d285.svg?_a=BAVAfVDW0",
+            "https://assets.bairesdev.com/image/upload/c_limit,w_120/fl_sanitize/v1/www/core/rolls_royce_default_6583f2d285.svg?_a=BAVAfVDW0",
           imageAlt: "Rolls Royce",
           imageClassName: "h-11 w-28 object-cover",
           content: (
@@ -107,7 +107,7 @@ export const NAV_ITEMS: NavMenuItem[] = [
         ],
         caseStudy: {
           imageSrc:
-            "https://assets.bairesdev.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/static/clientlogos/urban-outfitters_fjfyfq.svg?_a=BAVAfVDW0",
+            "https://assets.bairesdev.com/image/upload/c_limit,w_120/fl_sanitize/v1/www/static/clientlogos/urban-outfitters_fjfyfq.svg?_a=BAVAfVDW0",
           imageAlt: "Urban Outfitters",
           imageClassName: "h-11 w-28 object-cover",
           content: (
@@ -169,7 +169,7 @@ export const NAV_ITEMS: NavMenuItem[] = [
         ),
         caseStudy: {
           imageSrc:
-            "https://assets.bairesdev.com//image/upload/c_limit,w_120/fl_sanitize/v1/www/core/iqvia_default_6fe9d143af.svg?_a=BAVAfVDW0",
+            "https://assets.bairesdev.com/image/upload/c_limit,w_120/fl_sanitize/v1/www/core/iqvia_default_6fe9d143af.svg?_a=BAVAfVDW0",
           imageAlt: "IQVIA",
           imageClassName: "h-11 w-28 object-cover",
           content: (
@@ -223,7 +223,7 @@ export const NAV_ITEMS: NavMenuItem[] = [
         ),
         caseStudy: {
           imageSrc:
-            "https://assets.bairesdev.com//image/upload/c_limit,w_100/dpr_auto/f_auto/q_auto/v1/www/staging/nacho_816ff45aee?_a=BAVAfVDW0",
+            "https://assets.bairesdev.com/image/upload/c_limit,w_100/dpr_auto/f_auto/q_auto/v1/www/staging/nacho_816ff45aee?_a=BAVAfVDW0",
           imageAlt: "Nacho De Marco",
           imageClassName: "h-16 w-16 rounded object-cover",
           content: (

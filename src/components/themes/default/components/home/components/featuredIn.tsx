@@ -10,42 +10,42 @@ const FeaturedIn = () => {
     const slides = [
         {
             id: 1,
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_Financial_Times_599e4b4d2e.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_Financial_Times_599e4b4d2e.svg?_a=BAVAfVDW0",
             description: "We were recognized by Financial Times in the America's Fastest-growing Companies list of 2024, showcasing significant revenue growth between 2019 and 2022.",
             link: null,
             linkText: null
         },
         {
             id: 2,
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AF_Tech_Crunch_05005d31f3.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AF_Tech_Crunch_05005d31f3.svg?_a=BAVAfVDW0",
             description: "In 2022, BairesDev added 227 clients in the U.S. alone and currently has 445 clients worldwide across over 100 industries, from Fortune 500 companies to startups.",
             link: "https://www.bairesdev.com/press/bootstrapped-their-way-to-big-businesses/",
             linkText: "Read more"
         },
         {
             id: 3,
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_Newsweek_e6e77a3be2.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_Newsweek_e6e77a3be2.svg?_a=BAVAfVDW0",
             description: "BairesDev was recognized in the Newsweek Excellence 1000 Index, highlighting companies which are great examples of corporate success and responsibility.",
             link: null,
             linkText: null
         },
         {
             id: 4,
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_SXSW_92f4490185.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_SXSW_92f4490185.svg?_a=BAVAfVDW0",
             description: "Nacho De Marco, our CEO, was selected as a panelist to discuss 'The Great E-Migration: Tech and the Future of LATAM' during SXSW 2024.",
             link: null,
             linkText: null
         },
         {
             id: 5,
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_Stanford_b2759889c8.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_280/fl_sanitize/v1/www/core/AFI_Stanford_b2759889c8.svg?_a=BAVAfVDW0",
             description: "Our CEO, Nacho De Marco, was invited to Stanford University to share his entrepreneurial journey with its MBA students.",
             link: null,
             linkText: null
         },
         {
             id: 6,
-            logo: "https://assets.bairesdev.com//image/upload/c_limit,w_280/fl_sanitize/v1/www/core/HBS_logo_ef9d36009f.svg?_a=BAVAfVDW0",
+            logo: "https://assets.bairesdev.com/image/upload/c_limit,w_280/fl_sanitize/v1/www/core/HBS_logo_ef9d36009f.svg?_a=BAVAfVDW0",
             description: "Harvard Business School wrote a case about us as a leading example of culture-driven growth within the global tech industry.",
             link: "https://www.hbs.edu/faculty/Pages/item.aspx?num=67675",
             linkText: "Read more"
@@ -53,10 +53,10 @@ const FeaturedIn = () => {
     ];
 
     const featuredLogos = [
-        { alt: "CNBC", src: "https://assets.bairesdev.com//image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/cnbc_wehbcz.svg?_a=BAVAfVDW0" },
-        { alt: "Forbes", src: "https://assets.bairesdev.com//image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/forbes_qttlct.svg?_a=BAVAfVDW0" },
-        { alt: "Insider", src: "https://assets.bairesdev.com//image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/insider_dgm7os.svg?_a=BAVAfVDW0" },
-        { alt: "Bloomberg", src: "https://assets.bairesdev.com//image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/bloomberg_ru2hos.svg?_a=BAVAfVDW0" }
+        { alt: "CNBC", src: "https://assets.bairesdev.com/image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/cnbc_wehbcz.svg?_a=BAVAfVDW0" },
+        { alt: "Forbes", src: "https://assets.bairesdev.com/image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/forbes_qttlct.svg?_a=BAVAfVDW0" },
+        { alt: "Insider", src: "https://assets.bairesdev.com/image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/insider_dgm7os.svg?_a=BAVAfVDW0" },
+        { alt: "Bloomberg", src: "https://assets.bairesdev.com/image/upload/c_limit,w_100/fl_sanitize/v1/www/landings/bloomberg_ru2hos.svg?_a=BAVAfVDW0" }
     ];
 
     const slideVariants = {

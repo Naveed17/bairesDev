@@ -1,16 +1,10 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import Image from 'next/image';
 
 const HERO_IMAGE =
-  "https://assets.bairesdev.com//image/upload/c_limit,w_1920/dpr_auto/f_auto/q_auto/v1/www/core/hero_tjaova?_a=BAVAfVDW0";
-
-const HERO_SRCSET = [375, 384, 640, 834, 1024, 1280, 1512, 1728, 1920]
-  .map(
-    (w) =>
-      `https://assets.bairesdev.com//image/upload/c_limit,w_${w}/dpr_auto/f_auto/q_auto/v1/www/core/hero_tjaova?_a=BAVAfVDW0 ${w}w`,
-  )
-  .join(", ");
+  "https://assets.bairesdev.com/image/upload/c_limit,w_1920/dpr_auto/f_auto/q_auto/v1/www/core/hero_tjaova?_a=BAVAfVDW0";
 
 const AI_STAR_ICON = "https://assets.bairesdev.com/image/upload/v1/www/icons/AiStar.svg";
 
@@ -38,14 +32,12 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0 mt-50 md:mt-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           alt="BairesDev software engineers collaborating on projects"
-          fetchPriority="high"
-          decoding="async"
+          fill
+          priority
           className="lgS:block lgS:-top-24! hidden object-cover object-[45%_bottom] md:object-center"
-          style={{ position: "absolute", height: "100%", width: "100%", left: 0, top: 0, right: 0, bottom: 0, color: "transparent" }}
           sizes="100vw"
-          srcSet={HERO_SRCSET}
           src={HERO_IMAGE}
         />
         <div className="lgS:block absolute hidden h-12 w-full bg-linear-to-b from-white to-transparent" />

@@ -12,7 +12,7 @@ const BottomCTA = () => {
                         fill
                         className="object-contain"
                         sizes="(min-width: 1920px) 38rem, (min-width: 1728px) 34rem, (min-width: 1512px) 36rem, (min-width: 834px) 100vw, 44rem"
-                        src="https://assets.bairesdev.com//image/upload/c_limit,w_1920/dpr_auto/f_auto/q_auto/v1/www/core/bottom_cta_1_rnejgz?_a=BAVAfVDW0"
+                        src="https://assets.bairesdev.com/image/upload/c_limit,w_1920/dpr_auto/f_auto/q_auto/v1/www/core/bottom_cta_1_rnejgz?_a=BAVAfVDW0"
                     />
                 </div>
 

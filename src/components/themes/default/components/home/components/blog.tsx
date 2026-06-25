@@ -13,7 +13,7 @@ const BlogCarousel = () => {
             slug: "software-outsourcing",
             image: "https://bairesdev.mo.cloudinary.net/blog/2026/04/Software-Outsourcing-Explained_-Costs-Risks-and-Models.png?tx=w_640,q_auto",
             author: "Facundo Molina",
-            authorImage: "https://assets.bairesdev.com//image/upload/c_limit,w_36/dpr_auto/f_auto/q_auto/v1/www/blog/authors/Facundo-Molina-300x300_1776782703?_a=BAVAfVDW0"
+            authorImage: "https://assets.bairesdev.com/image/upload/c_limit,w_36/dpr_auto/f_auto/q_auto/v1/www/blog/authors/Facundo-Molina-300x300_1776782703?_a=BAVAfVDW0"
         },
         {
             id: 2,
@@ -21,7 +21,7 @@ const BlogCarousel = () => {
             slug: "software-development-services",
             image: "https://bairesdev.mo.cloudinary.net/blog/2026/04/Software-Development-Services_-A-Buyers-Guide.png?tx=w_640,q_auto",
             author: "Alessandro Baggio",
-            authorImage: "https://assets.bairesdev.com//image/upload/c_limit,w_36/dpr_auto/f_auto/q_auto/v1/www/blog/authors/AlessandroBaggio_1760447156?_a=BAVAfVDW0"
+            authorImage: "https://assets.bairesdev.com/image/upload/c_limit,w_36/dpr_auto/f_auto/q_auto/v1/www/blog/authors/AlessandroBaggio_1760447156?_a=BAVAfVDW0"
         },
         {
             id: 3,
@@ -29,7 +29,7 @@ const BlogCarousel = () => {
             slug: "staff-augmentation",
             image: "https://bairesdev.mo.cloudinary.net/blog/2026/04/Staff-Augmentation.png?tx=w_640,q_auto",
             author: "Natalia Rodriguez",
-            authorImage: "https://assets.bairesdev.com//image/upload/c_limit,w_36/dpr_auto/f_auto/q_auto/v1/www/blog/authors/Natalia-Rodriguez-FN_1776782701?_a=BAVAfVDW0"
+            authorImage: "https://assets.bairesdev.com/image/upload/c_limit,w_36/dpr_auto/f_auto/q_auto/v1/www/blog/authors/Natalia-Rodriguez-FN_1776782701?_a=BAVAfVDW0"
         }
     ];
 

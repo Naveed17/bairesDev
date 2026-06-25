@@ -14,7 +14,7 @@ const Footer = () => {
             height="40"
             decoding="async"
             style={{ color: 'transparent' }}
-            src="https://assets.bairesdev.com//image/upload/c_limit,w_60/fl_sanitize/v1/www/static/bairesdev-logo-footer_wbvcp2.svg?_a=BAVAfVDW0"
+            src="https://assets.bairesdev.com/image/upload/c_limit,w_60/fl_sanitize/v1/www/static/bairesdev-logo-footer_wbvcp2.svg?_a=BAVAfVDW0"
           />
         </div>
 
