@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 
 const TeamRoles = () => {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [imageErrors, setImageErrors] = useState({});
+    const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
     const sectionRef = useRef(null);
     const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
     const controls = useAnimation();
@@ -19,7 +19,7 @@ const TeamRoles = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    const handleImageError = (id) => {
+    const handleImageError = (id: any) => {
         setImageErrors(prev => ({ ...prev, [id]: true }));
     };
 
@@ -214,7 +214,7 @@ const TeamRoles = () => {
                                         </clipPath>
                                     </defs>
 
-                                    {!imageErrors[role.id] && (
+                                    {!imageErrors[role.id as any] && (
                                         <g clipPath={`url(#overflow-${role.clipPathId})`}>
                                             <image
                                                 x="0"

@@ -196,7 +196,7 @@ const Footer = () => {
                             type="email"
                             aria-label="email"
                             id="email-input"
-                            maxLength="140"
+                            maxLength={140}
                             placeholder="name@email.com"
                             name="email"
                             value=""

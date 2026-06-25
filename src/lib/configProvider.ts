@@ -7,20 +7,17 @@ import React, {
   useEffect,
 } from "react";
 import { useAppSelector } from "@lib/redux/store";
-import useLocale from "@hooks/useLocale";
 
 export type Config = {
   controlSize?: "default" | "compact";
   loading: boolean;
   setLoading: (v: boolean) => void;
-  loadAppData: (locale?: string) => Promise<void>;
   direction: "ltr" | "rtl";
 };
 
 export const defaultConfig: Config = {
   loading: false,
   setLoading: () => {},
-  loadAppData: async () => {},
   direction: "ltr",
 };
 
@@ -34,22 +31,7 @@ export function ConfigProvider({ children }: { children: React.ReactNode }) {
     }
     return false;
   });
-  const { locale } = useLocale();
   const direction = useAppSelector((state) => state.root.direction);
-
-  const loadAppData = useCallback(
-    async (requestedLocale?: string): Promise<void> => {
-      setLoading(true);
-      try {
-        console.log("loadAppData", requestedLocale ?? locale);
-      } catch (err) {
-        console.error("Failed to load app data:", err);
-      } finally {
-        setLoading(false);
-      }
-    },
-    [locale],
-  );
 
   const mode = useAppSelector((state) => state.root.mode);
 
@@ -59,16 +41,9 @@ export function ConfigProvider({ children }: { children: React.ReactNode }) {
     root.classList.add(mode);
   }, [mode]);
 
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    loadAppData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   const value: Config = {
     loading,
     setLoading,
-    loadAppData,
     direction,
   };
 
