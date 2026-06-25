@@ -16,7 +16,7 @@ export type Config = {
 };
 
 export const defaultConfig: Config = {
-  loading: false,
+  loading: true,
   setLoading: () => {},
   direction: "ltr",
 };
@@ -25,12 +25,7 @@ export const ConfigContext = createContext<Config>(defaultConfig);
 ConfigContext.displayName = "ConfigContext";
 
 export function ConfigProvider({ children }: { children: React.ReactNode }) {
-  const [loading, setLoading] = useState(() => {
-    if (typeof window !== "undefined") {
-      return sessionStorage.getItem("localeChanging") === "true";
-    }
-    return false;
-  });
+  const [loading, setLoading] = useState(true);
   const direction = useAppSelector((state) => state.root.direction);
 
   const mode = useAppSelector((state) => state.root.mode);
@@ -40,6 +35,12 @@ export function ConfigProvider({ children }: { children: React.ReactNode }) {
     root.classList.remove("light", "dark");
     root.classList.add(mode);
   }, [mode]);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const value: Config = {
     loading,
