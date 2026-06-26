@@ -97,11 +97,11 @@ const TeamRoles = () => {
     ];
 
     const imageOverflowRects: Record<number, { x: number; y: number; width: number; height: number }> = {
-        1: { x: 42, y: -8, width: 62, height: 42 },
-        2: { x: 42, y: -8, width: 92, height: 52 },
+        1: { x: 42, y: 19, width: 94, height: 79 },
+        2: { x: 42, y: -8, width: 99, height: 52 },
         3: { x: 50, y: -8, width: 82, height: 58 },
         4: { x: 58, y: -8, width: 80, height: 52 },
-        5: { x: 58, y: -8, width: 92, height: 46 },
+        5: { x: 67, y: 2, width: 147, height: 128 },
     };
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -289,7 +289,7 @@ const TeamRoles = () => {
                             </div>
 
                             <motion.p
-                                className="site-paragraph-xl text-site-neutrals-300 max-w-52 self-center whitespace-pre-line text-center font-bold"
+                                className="site-paragraph-xl text-site-neutrals-300 max-w-52 self-center whitespace-pre-line text-center font-bold!"
                                 style={{
                                     opacity: 1,
                                     translate: role.textTransform,
