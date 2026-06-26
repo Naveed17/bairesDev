@@ -3,7 +3,7 @@ import React from 'react';
 const FullStackCoverage = () => {
     return (
 
-        <section className="mx-4 md:mx-6 lg:mx-37 xl:mx-52 2xl:mx-auto 2xl:max-w-7xl mb-16">
+        <section className="mx-4 md:mx-6 lg:mx-37 xl:mx-52 2xl:mx-auto 2xl:max-w-7xl mb-40 md:mb-16">
             <header className="mb-12 flex w-full flex-col justify-between gap-4 mdL:flex-row mdL:items-end">
                 <h2 className="site-display-l text-site-neutrals-900 [&_strong]:text-site-primary-600 font-medium [&>p:not(:last-child)]:pb-4">
                     Get full-stack coverage.<br />Unblock execution across the SDLC<strong>.</strong>

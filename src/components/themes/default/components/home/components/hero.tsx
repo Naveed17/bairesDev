@@ -31,7 +31,7 @@ export default function Hero() {
     <section className="bg-site-neutrals-25 relative -mb-24 -mt-14 flex overflow-hidden pb-24 md:-mb-52 md:pb-48 lg:pb-60">
       {/* Background image */}
       <div className="absolute inset-0 z-0 mt-50 md:mt-0">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        { }
         <Image
           alt="BairesDev software engineers collaborating on projects"
           fill
@@ -69,7 +69,7 @@ export default function Hero() {
                     {word.label}
                     {word.hasIcon && (
                       <span
-                        className={`w-6 h-6 bg-site-primary-600 absolute scale-110 ${word.iconLeft}`}
+                        className={`hidden md:block w-6 h-6 bg-site-primary-600 absolute scale-110 ${word.iconLeft}`}
                         style={{ mask: `url("${AI_STAR_ICON}")` }}
                       />
                     )}
