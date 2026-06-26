@@ -12,8 +12,8 @@ const Spinner: React.FC<SpinnerProps> = ({ show = true, message = 'Loading...' }
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-black/20 via-black/30 to-black/40 dark:from-black/40 dark:via-black/60 dark:to-black/70 backdrop-blur-lg backdrop-saturate-150">
             <div className="flex  space-x-1 max-w-sm mx-4">
                 <div className="relative mt-1">
-                    <div className="w-6 h-6 border-3 border-gray-300/50 dark:border-gray-600/50 rounded-full animate-spin border-t-blue-600 dark:border-t-blue-400"></div>
-                    <div className="absolute inset-0 w-6 h-6 border-3 border-transparent rounded-full animate-pulse border-t-blue-400/60 dark:border-t-blue-300/60"></div>
+                    <div className="w-6 h-6 border-3 border-gray-300/50 dark:border-gray-600/50 rounded-full animate-spin border-t-site-primary-600"></div>
+                    <div className="absolute inset-0 w-6 h-6 border-3 border-transparent rounded-full animate-pulse border-t-site-primary-400/60"></div>
                 </div>
                 <div className="text-center">
                     <p className="text-gray-800 dark:text-gray-200 font-medium text-2xl">{message}</p>

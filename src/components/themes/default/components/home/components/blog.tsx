@@ -92,7 +92,7 @@ const BlogCarousel = () => {
                 >
                     {blogPosts.map((post) => (
                         <SwiperSlide key={post.id}>
-                            <div className="inline-flex items-center justify-center overflow-hidden m-0 w-80 mr-4 md:w-96 lg:w-80 lg:mx-4 xl:w-[21.875rem] 2xl:w-96 2xl:mr-6 2xl:ml-4">
+                            <div className="inline-flex items-center justify-center overflow-hidden w-full">
                                 <div className="z-0 bg-white flex flex-col h-full !bg-transparent w-full">
                                     <div className="relative rounded-[1.25rem] overflow-hidden peer">
                                         <a
@@ -149,7 +149,7 @@ const BlogCarousel = () => {
                 </Swiper>
 
                 {/* Custom Navigation Buttons */}
-                <div className="flex [&_button]:m-2 absolute top-[20%] left-[-8%] w-[116%] justify-between invisible lgS:visible">
+                <div className="flex [&_button]:m-2 absolute top-[20%] left-[-8%] w-[116%] justify-between hidden lgS:flex">
                     <button
                         type="button"
                         aria-label="Previous slide"
